@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img{
+    width:100px;
+}
+
+.header-nav nav ul{ 
+    display: flex;
+    ;
+}
