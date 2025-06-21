@@ -38,4 +38,12 @@ arrowLeft.addEventListener('click',()=> {
 //     }
 
 // }
-// setInterval(autoSlider, 1000)
+// setInterval(autoSlider, 5000)
+
+//menubar responsive
+const menuBar =document.querySelector('.header-bar-icon')
+const headerNav = document.querySelector('.header-nav');
+
+menuBar.addEventListener('click',()=>{
+    headerNav.classList.toggle('active')
+})

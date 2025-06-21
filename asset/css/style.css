@@ -156,3 +156,8 @@ header .row-flex{
     display: flex;
     flex-direction: column;
 }
+
+/*responsive*/
+.header-bar-icon{
+    display: none;
+}
