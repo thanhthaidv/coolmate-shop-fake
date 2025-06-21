@@ -23,11 +23,13 @@ a{
     justify-content: space-between;
 }
 
+
+/* Header */
 .header-logo img{
     width:100px;
 }
 
 .header-nav nav ul{ 
     display: flex;
-    ;
 }
+
