@@ -1,0 +1,41 @@
+const sliderItem = document.querySelectorAll('.slider-item');
+for (let index = 0;index <sliderItem.length;index++){
+
+    sliderItem[index].style.left = index *100 + "%";
+
+}
+
+const sliderItems = document.querySelector('.slider-items');
+const arrowRight = document.querySelector('.fa-arrow-right');
+const arrowLeft = document.querySelector('.fa-arrow-left');
+let i =0 
+arrowRight.addEventListener('click',()=> {
+    i++
+    if(i < sliderItem.length){
+        sliderItems.style.left = -i * 100 + "%";
+    } else{
+        return false
+    }
+});
+
+arrowLeft.addEventListener('click',()=> {
+     if(i <= 0){
+        return false
+    } else{
+        i--
+        sliderItems.style.left = -i * 100 + "%";
+        console.log(i);
+    }
+});
+
+// function autoSlider() {
+//     if(i < sliderItem.length-1  ){
+//         i++
+//         sliderItems.style.left = -i * 100 + "%";
+//     } else{
+//         i=0
+//         sliderItems.style.left = -i * 100 + "%";
+//     }
+
+// }
+// setInterval(autoSlider, 1000)
