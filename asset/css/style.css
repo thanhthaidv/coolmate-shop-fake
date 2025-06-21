@@ -1,9 +1,16 @@
+:root{
+    --header-height: 70px;
+    --main-bg:#d5d5d5;
+    --main-trasition:all 0.3s ease-in-out;
+    --main-color:whitesmoke;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
 
+}
 
 .container{
     max-width: 1240px;
@@ -16,6 +23,11 @@ li{
 
 a{
     text-decoration: none;
+    color:unset;
+}
+
+input{
+    outline: none;
 }
 
 .row-flex{
@@ -25,11 +37,78 @@ a{
 
 
 /* Header */
+
+header{
+    height: var(--header-height);
+    border-bottom: 1px solid #ddd;
+}
+
+header .row-flex{
+    align-items: center;
+}
+
 .header-logo img{
     width:100px;
+    cursor: pointer;
 }
 
 .header-nav nav ul{ 
     display: flex;
+
+}
+.header-nav nav ul li{
+    padding: 0 20px;
+    transition: var(--main-trasition);
+    cursor: pointer;
+}
+.header-nav nav ul li a{
+    line-height: var(--header-height);
+    font-size: smaller;
+
+    
 }
 
+.header-nav nav ul li:hover{
+    background-color: var(--main-bg);
+}
+.header-search{
+    position: relative;
+}
+
+.header-search i{
+    position: absolute;
+    left:6px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header-search input{
+    height: 30px;
+    border: solid 1px black;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+.header-cart i {
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-cart i::after {
+    content: attr(number);
+    position: absolute;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    top: -10px;
+    right: -10px;
+    background-color: black;
+    border-radius: 50%;
+    color:var(--main-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
