@@ -3,7 +3,9 @@
     --main-bg:#d5d5d5;
     --main-trasition:all 0.3s ease-in-out;
     --main-color:whitesmoke;
+    --main-font-weight: 550;
 }
+
 
 *{
     margin:0;
@@ -11,9 +13,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    overflow-y:scroll ;
-} */
 
 .container{
     max-width: 1240px;
@@ -38,6 +37,42 @@ input{
     justify-content: space-between;
 }
 
+.row-grid{
+    display: grid;
+    justify-content: space-between;
+}
+
+.heading-text{
+    font-weight: bolder;
+    padding:  12px;
+    position: relative;
+    margin: 20px 0;
+
+}
+
+.heading-text::after{
+    position: absolute;
+    content:"";
+    display: block;
+    width:2px;
+    height:50%;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: var(--main-bg);
+}
+
+.heading-text::before{
+    position: absolute;
+    content:"";
+    display: block;
+    width:60px;
+    height:3px;
+    bottom: 0;
+    left:12px;
+    background-color: black;
+    border-radius: 10px;
+}
 
 /* Header */
 
@@ -135,7 +170,7 @@ header .row-flex{
 }
 
 .slider-item img {
-  width: 100vw;
+  width: 100%;
 }
 
 .slider-arrow {
@@ -161,3 +196,60 @@ header .row-flex{
 .header-bar-icon{
     display: none;
 }
+
+
+/*hot- products*/
+.hot-products .row-grid-hot-product{
+    grid-template-columns: repeat(5 ,19%);
+}
+
+.hot-product-item img {
+    width: 100%;
+}
+
+.hot-product-item > p{
+    font-weight: var(--main-font-weight);
+
+}
+
+.hot-product-item span{
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.hot-product-item-price {
+    margin:12px 0;
+}
+
+.hot-product-item-price p{
+    font-weight: var(--main-font-weight);
+}
+
+.hot-product-item-price span{
+    font-size: small;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+/* footer */
+footer{
+    margin-top: 50px;
+    padding: 50px 0 0 12px;
+    background-color: var(--main-bg);
+}
+
+.footer-item p:first-child{
+    font-weight: bolder;
+    margin-bottom:12px;
+}
+
+.footer-item p{
+    font-weight: lighter;
+    line-height: 32px;
+}
+
+
+footer .row-grid{
+    grid-template-columns: repeat(4,25%);
+}
+

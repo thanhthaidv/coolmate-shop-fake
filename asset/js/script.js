@@ -47,3 +47,5 @@ const headerNav = document.querySelector('.header-nav');
 menuBar.addEventListener('click',()=>{
     headerNav.classList.toggle('active')
 })
+
+

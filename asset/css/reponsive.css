@@ -50,8 +50,23 @@
         width: 70px;
     }
 
+    footer .row-grid{
+        grid-template-columns: repeat(2, 49%);
+        row-gap: 20px;
+    }
 
-    
+}
 
-    
+@media only screen and ( max-width:700px ){
+    .row-grid{
+        padding: 0 12px;
+    }
+
+    .hot-products .row-grid-hot-product{
+        grid-template-columns: repeat(2 ,49%);
+        row-gap: 20px;
+    }
+
+
+
 }
