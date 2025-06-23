@@ -44,7 +44,7 @@ input{
 
 .heading-text{
     font-weight: bolder;
-    padding:  12px;
+    padding:  6px ;
     position: relative;
     margin: 20px 0;
 
@@ -66,10 +66,10 @@ input{
     position: absolute;
     content:"";
     display: block;
-    width:60px;
+    width:50%;
     height:3px;
     bottom: 0;
-    left:12px;
+    left:6px;
     background-color: black;
     border-radius: 10px;
 }
@@ -257,4 +257,80 @@ footer{
 
 footer .row-grid{
     grid-template-columns: repeat(4,25%);
+}
+
+/*products*/
+.p-to-top{
+    padding-top: calc((var(--header-height) + 20px));
+}
+
+.product-detail .row-flex-product-detail{
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.row-flex-product-detail i {
+    margin: 0 12px ;
+}
+
+.row-flex-product-detail  {
+    position: relative;
+    padding-left: 6px;
+    padding-bottom :6px ;
+}
+
+.row-flex-product-detail::after{
+    position: absolute ;
+    content: "";
+    height: 50%;
+    width: 2px;
+    left:0;
+    background-color: var(--main-bg);
+}
+
+.row-flex-product-detail::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 60px;
+    bottom: 0;
+    left:6px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+.product-detail .row-grid{
+    grid-template-columns: 50% 50%;
+}
+
+.product-detail-left{
+    position: relative;
+}
+
+.product-detail-left img{
+    width: 100%;
+}
+
+.product-images-items{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 20px;
+}
+
+.product-images-items img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    object-fit:cover ;
+    border-radius: 10px;
+    border:1px solid var(--main-bg);    
+    cursor: pointer;
+}
+
+.product-images-items img.active{
+    border:1px solid black;
 }

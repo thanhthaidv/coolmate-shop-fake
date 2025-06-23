@@ -9,24 +9,30 @@
     const arrowRight = document.querySelector('.fa-arrow-right');
     const arrowLeft = document.querySelector('.fa-arrow-left');
     let i =0 
-    arrowRight.addEventListener('click',()=> {
-        i++
-        if(i < sliderItem.length){
-            sliderItems.style.left = -i * 100 + "%";
-        } else{
-            i=0
-            sliderItems.style.left = -i * 100 + "%";
-        }
-    });
+    if(arrowRight !=null && arrowLeft != null){
+        arrowRight.addEventListener('click',()=> {
+            i++
+            if(i < sliderItem.length){
+                sliderItems.style.left = -i * 100 + "%";
+            } else{
+                i=0
+                sliderItems.style.left = -i * 100 + "%";
+            }
+        });
 
-    arrowLeft.addEventListener('click',()=> {
-        if(i <= 0){
-            return false
-        } else{
-            i--
-            sliderItems.style.left = -i * 100 + "%";
-        }
-    });
+        arrowLeft.addEventListener('click',()=> {
+            if(i <= 0){
+                return false
+            } else{
+                i--
+                sliderItems.style.left = -i * 100 + "%";
+            }
+        });
+    }
+
+    function sliderMove(i){
+        sliderItems.style.left = -i * 100 + "%";
+    }
 
 // function autoSlider() {
 //     if(i < sliderItem.length-1  ){
@@ -58,3 +64,21 @@ window.addEventListener('scroll',()=>{
         document.querySelector('#header').classList.remove('active');
     }
 });
+
+
+//click prodct detail
+const imageSmall =document.querySelectorAll('.product-images-items img')
+const imageMain = document.querySelector('.main-image ');
+for(let index = 0;index < imageSmall.length;index++){
+    imageSmall[index].addEventListener('click',()=>{
+        imageMain.src = imageSmall[index].src;
+
+        for(let i = 0;i < imageSmall.length;i++){
+            imageSmall[i].classList.remove('active');
+        }
+        
+        imageSmall[index].classList.add('active');
+    })
+}
+
+
