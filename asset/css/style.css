@@ -4,6 +4,7 @@
     --main-trasition:all 0.3s ease-in-out;
     --main-color:whitesmoke;
     --main-font-weight: 550;
+    --main-border-radius: 5px ;
 }
 
 
@@ -41,6 +42,22 @@ input{
     display: grid;
     justify-content: space-between;
 }
+
+.product-item-price {
+    margin:12px 0;
+}
+
+.product-item-price p{
+    font-weight: var(--main-font-weight);
+}
+
+.product-item-price span{
+    font-size: small;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+
 
 .heading-text{
     font-weight: bolder;
@@ -223,19 +240,6 @@ header .row-flex{
     font-weight: 300;
 }
 
-.hot-product-item-price {
-    margin:12px 0;
-}
-
-.hot-product-item-price p{
-    font-weight: var(--main-font-weight);
-}
-
-.hot-product-item-price span{
-    font-size: small;
-    font-weight: 300;
-    text-decoration: line-through;
-}
 
 /* footer */
 footer{
@@ -263,7 +267,7 @@ footer .row-grid{
 .p-to-top{
     padding-top: calc((var(--header-height) + 20px));
 }
-
+ 
 .product-detail .row-flex-product-detail{
     justify-content: flex-start;
     align-items: center;
@@ -302,7 +306,8 @@ footer .row-grid{
 
 
 .product-detail .row-grid{
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
+    column-gap: 30px;
 }
 
 .product-detail-left{
@@ -334,3 +339,49 @@ footer .row-grid{
 .product-images-items img.active{
     border:1px solid black;
 }
+
+.product-detail-right-infor h1{
+    font-weight: var(--main-font-weight);
+}
+
+.product-detail-right-des h2{
+    font-weight: var(--main-font-weight);
+    margin:12px 0; 
+    font-size:20px
+}
+
+.product-detail-right-des ul{
+    background-color: var(--main-bg);
+    padding: 20px 20px 20px 30px;
+    border-radius:var(--main-border-radius) ;
+}
+
+.product-detail-right-des ul li{
+    list-style: circle;
+    margin-bottom:12px;
+}
+
+
+.product-detail-right-quantity h2{
+    font-weight: var(--main-font-weight);
+    margin:12px 0; 
+    font-size:20px
+}
+
+
+.product-detail-right-quantity input{
+    height:25px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+/*hide arrow of number*/
+
+
+.product-detail-right-quantity input input::-webkit-outer-spin-button,
+.product-detail-right-quantity input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
