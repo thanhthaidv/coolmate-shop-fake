@@ -50,9 +50,17 @@
         width: 70px;
     }
 
+
+    /*footer*/
     footer .row-grid{
         grid-template-columns: repeat(2, 49%);
         row-gap: 20px;
+    }
+
+    /*product detail*/
+    .product-detail .row-grid{
+        grid-template-columns: repeat(1, 100%);
+        row-gap: 30px;
     }
 
 }
@@ -69,4 +77,6 @@
 
 
 
+
 }
+

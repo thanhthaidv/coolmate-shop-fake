@@ -82,3 +82,20 @@ for(let index = 0;index < imageSmall.length;index++){
 }
 
 
+//quantity product
+const quanPlus = document.querySelector('.fa-plus');
+const quanMinus = document.querySelector('.fa-minus');
+const quantityInput = document.querySelector('.quantity-input');
+let qty=1
+quanPlus.addEventListener('click',()=>{
+    quantityInput.value=qty++;
+})
+
+quanMinus.addEventListener('click',()=>{
+    if(qty < 1){
+        return false
+    } else{
+        quantityInput.value=qty--;
+    }
+})  
+
