@@ -2,7 +2,7 @@
 
 :root{
     --header-height: 70px;
-    --main-bg:#d5d5d5;
+    --main-bg:#e8e8e8;
     --main-trasition:all 0.3s ease-in-out;
     --main-color:whitesmoke;
     --main-font-weight: 550;
@@ -61,7 +61,7 @@ input{
 }
 
 .main-btn:hover{
-    background-color: var(--main-bg);
+    background-color: #5a96a0;
     color: black;   
 }
 
@@ -537,5 +537,23 @@ footer .row-grid{
     width: 49%;
 }
 
+.cart-section-right-input-email input{
+    width: 100%;
+}   
 
+.cart-section-right-input-address input{
+    width: 100%;
+}
 
+.cart-section-right-input-note  input{
+    width: 100%;
+}
+
+/*Order confirm*/
+.order-confirm-content {
+    padding: 20px 12px;
+    background-color: var(--main-bg);
+    border-radius:var(--main-border-radius) ;
+    margin-top:3px;
+    width: 100%;
+}

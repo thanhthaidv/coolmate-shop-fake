@@ -87,6 +87,8 @@ const quanPlus = document.querySelector('.fa-plus');
 const quanMinus = document.querySelector('.fa-minus');
 const quantityInput = document.querySelector('.quantity-input');
 let qty=1
+
+if(quanMinus !=null && quanPlus!=null){
 quanPlus.addEventListener('click',()=>{
     quantityInput.value=qty++;
 })
@@ -99,3 +101,4 @@ quanMinus.addEventListener('click',()=>{
     }
 })  
 
+}
