@@ -6,6 +6,7 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="/asset/css/style.css">
     <link rel="stylesheet" href="/asset/css/reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <title>Coolmate</title>
 </head> 
@@ -134,6 +135,31 @@
                 </div>
                 <div class="cart-section-right">
                     <h2 class="main-h2">Thông tin đơn hàng</h2>
+                    <div class="cart-section-right-input-phone">
+                        <input type="text" placeholder="Tên">
+                        <input type="text" placeholder="Điện thoại">
+                    </div>
+                    <div class="cart-section-right-input-email">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="cart-section-right-input-select">
+                        <select name="" id="city">
+                            <option value="">Tỉnh/Tp</option>
+                        </select>
+                        <select name="" id="district">
+                            <option value="">Quận/huyện</option>
+                        </select>
+                        <select name="" id="ward">
+                            <option value="">Phường/xã</option>
+                        </select>
+                    </div>
+                    <div class="cart-section-right-input-address">
+                        <input type="text" placeholder="Địa chỉ">
+                    </div>
+                    <div class="cart-section-right-input-note">
+                        <input type="text" placeholder="Ghi chú">
+                    </div>
+                    <button class="main-btn">Gửi đơn hàng</button>
                 </div>
             </div>
         </div>
@@ -220,8 +246,8 @@
             </div>
         </div>
     </footer>
-    
+<script src="/asset/js/apiprovince.js"></script>
+<script src="/asset/js/script.js"></script>
 
-    <script src="/asset/js/script.js"></script>
 </body>
 </html>
