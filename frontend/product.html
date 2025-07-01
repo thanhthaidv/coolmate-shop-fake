@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/asset/css/style.css">
-    <link rel="stylesheet" href="/asset/css/reponsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/reponsive.css">
+
     <title>Coolmate</title>
 </head> 
 <body>
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="header-logo">
-                    <img src="/asset/images/logo.png" alt="">
+                    <img src="asset/images/logo.png" alt="">
                 </div>
                 <div class="header-nav ">
                     <nav>
@@ -44,24 +44,68 @@
         </div>
     </header> 
 
-    <!--Order-confirm-->
-    <section class="order-success p-to-top">
+    <!-- Product Detail -->
+    <section class="product-detail p-to-top">
         <div class="container">
-            <div class="row-flex row-flex-product-detail" >
-                <p>Xác nhận đơn hàng: <span style="font-weight: bolder;">#37 Thành công</span></p>
-            </div>  
-            <div class="row-flex">
-                <div class="order-confirm-content">
-                    <p>Đơn hàng của bạn đã được xác nhận <span  style="font-weight: bolder;" >Thành công</span>! <br>
-                        <span style="font-size: small;">Chúng tôi sẽ <span style="font-weight: bolder;">Giao hàng </span> trong thời gian tối đa 3 ngày làm việc</span>
-                    </p>
-                    <br>
-                    <button class="main-btn">Tiếp tục mua hàng</button>
+            <div class="row-flex row-flex-product-detail">
+                <p class="heading-text-product">Sản phẩm </p><i class="fa-solid fa-arrow-right"></i><p>T-Shirt Cotton 220GSM</p>
+            </div>
+            <div class="row-grid">
+                <div class="product-detail-left">
+                    <img class ="main-image" src="asset/images/product/aothun1.1.jpg" alt="">
+                    <div class="product-images-items">
+                        <img class="active" src="asset/images/product/aothun1.1.jpg" alt="">
+                        <img src="asset/images/product/aothun1.2.avif" alt="">
+                        <img src="asset/images/product/aothun1.3.avif" alt="">
+                        <img src="asset/images/product/aothun1.4.avif" alt="">
+                        <img src="asset/images/product/aothun1.5.avif" alt="">
+                    </div>
+                </div>
+                 <div class="product-detail-right">
+                   <div class="product-detail-right-infor">
+                        <h1>T-Shirt Cotton 220GSM</h1>
+                        <p>100% Cotton</p>
+                        <div class="product-item-price">
+                                <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span></p>
+                        </div>
+                   </div>
+                   <div class="product-detail-right-des"    >
+                    <h2>Đặc điểm nổi bật</h2>
+                    <ul>
+                        <li>Chất liệu: 100% Mercerized Cotton</li>
+                        <li>Kiểu dáng: Regular</li>
+                        <li>Phù hợp: Hoạt động thường ngày, đi chơi, du lịch</li>
+                        <li>Tính năng: Thoáng khí và thấm hút</li>
+                        <li>Bảo quản :Không giặt sấy - Giặt phơi khô - Không dùng chất tẩy - Không giặt khô</li>
+                    </ul>
+                   </div>
+                   <div class="product-detail-right-quantity">
+                        <h2>Số lượng</h2>
+                        <div class="product-detail-right-quantity-input">
+                            <i class="fa-solid fa-minus"></i>
+                            <input type="text" type="number" value="1" class="quantity-input">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                   </div>
+                   <div class="product-detail-right-addcart">
+                        <button class="main-btn">Thêm vào giỏ hàng</button>
+                   </div>
                 </div>
             </div>
-            
+            <div class="row-flex">
+                <div class="product-detail-content">
+                    <h2>Chi tiết sản phẩm</h2>
+                    <p>Sở hữu nhiều tính năng nổi bật từ chất liệu tới màu sắc, áo thun nam cotton 220GSM Coolmate chính là sự lựa chọn hoàn hảo cho chàng mỗi khi trời nóng nực.
+                        Tuy nhiên , khi nhu cầu thay đổi các nhà thiết kế đã tạo ra một sản phẩm mới với chất liệu cotton 220GSM, một chất liệu được làm từ sợi bông tự nhiên, mang lại cảm giác thoải mái và dễ chịu cho người mặc. 
+                        Với độ dày vừa phải, áo thun cotton 220GSM có khả năng giữ ấm tốt trong mùa đông và thoáng mát trong mùa hè. 
+                        Ngoài ra, chất liệu này còn có độ bền cao, giúp áo thun giữ được hình dáng và màu sắc sau nhiều lần giặt giũ.
+                    </p>
+                    <img src="asset/images/ao-thun-100-cotton-220gsm-thumb-1.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- Product -->
      <section class="hot-products">
         <div class="container">
@@ -70,7 +114,7 @@
             </div>
             <div class="row-grid row-grid-hot-product">
                 <div class="hot-product-item">
-                    <a href=""><img src="/asset/images/product/aothun1.1.jpg" alt=""> </a>
+                    <a href=""><img src="asset/images/product/aothun1.1.jpg" alt=""> </a>
                         <p><a href="">T-Shirt Cotton 220GSM</a></p>
                         <span>100% Cotton</span>
                         <div class="product-item-price ">
@@ -78,7 +122,7 @@
                         </div>
                 </div>
                 <div class="hot-product-item">
-                    <a href=""><img src="/asset/images/product/aothun2.webp" alt=""> </a>
+                    <a href=""><img src="asset/images/product/aothun2.webp" alt=""> </a>
                         <p><a href="">T-Shirt Cotton 220GSM</a></p>
                         <span>100% Cotton</span>
                         <div class="product-item-price ">
@@ -86,7 +130,7 @@
                         </div>
                 </div>
                 <div class="hot-product-item">
-                    <a href=""><img src="/asset/images/product/aothun3.webp" alt=""> </a>
+                    <a href=""><img src="asset/images/product/aothun3.webp" alt=""> </a>
                         <p><a href="">T-Shirt Cotton 220GSM</a></p>
                         <span>100% Cotton</span>
                         <div class="product-item-price ">
@@ -94,7 +138,7 @@
                         </div>
                 </div>
                 <div class="hot-product-item">
-                    <a href=""><img src="/asset/images/product/aothun4.webp" alt=""> </a>
+                    <a href=""><img src="asset/images/product/aothun4.webp" alt=""> </a>
                         <p><a href="">T-Shirt Cotton 220GSM</a></p>
                         <span>100% Cotton</span>
                         <div class="product-item-price ">
@@ -102,7 +146,7 @@
                         </div>
                 </div>
                 <div class="hot-product-item">
-                    <a href=""><img src="/asset/images/product/aothun5.jpg" alt=""> </a>
+                    <a href=""><img src="asset/images/product/aothun5.jpg" alt=""> </a>
                         <p><a href="">T-Shirt Cotton 220GSM</a></p>
                         <span>100% Cotton</span>
                         <div class="product-item-price ">
@@ -144,7 +188,8 @@
             </div>
         </div>
     </footer>
-<script src="/asset/js/script.js"></script>
+    
 
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
