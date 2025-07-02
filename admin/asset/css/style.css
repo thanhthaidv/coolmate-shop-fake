@@ -30,6 +30,11 @@ li{
     justify-content: space-between;
 }
 
+.flex-box{
+    display: flex;
+    ;
+}
+
 /*main admin*/
 .admin .row-grid{
     grid-template-columns: 20% 80%;
@@ -104,3 +109,87 @@ li{
     background-color: var(--sub-bg-color);
 }
 
+
+.admin-content-top{
+    display: flex;
+    justify-content: space-between;
+    height: var(--top-height);
+    padding: 0 12px;
+}
+
+.admin-content-top .flex-box{
+    height: 70px;
+    align-items: center;
+}
+
+.admin-content-top i{
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.admin-content-top ul li:last-child img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.admin-content-top ul li:last-child p{
+    cursor: pointer;
+}
+
+.admin-content-top-right ul li:first-child i {
+    position: relative;
+
+}
+
+.admin-content-top-right ul li:first-child i::after{
+    position: absolute;
+    content: attr(number);
+    height:20px;
+    width: 20px;
+    display: block;
+    background-color: aqua;
+    border-radius: 50%;
+    top:-12px;
+    right: -10px;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation:  notification ;
+    animation-duration:2s;
+    animation-iteration-count: infinite; 
+    animation-delay: 0.5s;
+}
+
+.admin-content-top-right ul li:nth-child(2) i {
+    position: relative;
+
+}
+
+.admin-content-top-right ul li:nth-child(2) i::after{
+    position: absolute;
+    content: attr(number);
+    height:20px;
+    width: 20px;
+    display: block;
+    background-color: red;
+    border-radius: 50%;
+    top:-12px;
+    right: -10px;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation:  notification ;
+    animation-duration:2s;
+    animation-iteration-count: infinite; 
+    animation-delay: 0.5s;
+}
+
+@keyframes notification {
+    0%{
+        opacity: 0;
+    };
+    100%   
+        {opacity: 1;}
+}
