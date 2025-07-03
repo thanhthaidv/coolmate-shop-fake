@@ -3,6 +3,8 @@
     --sub-bg-color:#f2f7fb;
     --top-height:70px;
      --main-trasition:all 0.3s ease-in-out;
+
+
 }
 
 body {
@@ -115,6 +117,8 @@ li{
     justify-content: space-between;
     height: var(--top-height);
     padding: 0 12px;
+    border-bottom: 1px solid gray;
+    
 }
 
 .admin-content-top .flex-box{
@@ -189,7 +193,30 @@ li{
 @keyframes notification {
     0%{
         opacity: 0;
-    };
+    }
     100%   
-        {opacity: 1;}
+        {
+            opacity: 1;
+        }
 }
+
+
+.admin-content-main-title h1 {
+    padding:12px;
+    font-weight: 500;
+    position: relative;
+}
+
+.admin-content-main-title h1::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height:4px;
+    width: 70px;
+    background-color: #7e8993   ; 
+    bottom: 6px;
+    left: 12px;
+    border-bottom-right-radius:5px ;
+    border-top-right-radius:5px ;
+}
+
