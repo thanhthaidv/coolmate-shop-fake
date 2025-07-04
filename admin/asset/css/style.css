@@ -45,20 +45,26 @@ li{
     transition: var(--main-trasition);
 }
 
-.delete-class {
+.delete-class, .non_confirm-order {
     padding: 3px;
     background-color: #ff1800;
     color: white;
     border-radius: var(--main-border-radius);
 }
 
-.edit-class{
+.edit-class {
     padding: 3px;
     background-color: #6b91e5   ;
     color: white;
     border-radius: var(--main-border-radius);
 }
 
+.confirm-order{
+    padding: 3px;
+    background-color: #006d02   ;
+    color: white;
+    border-radius: var(--main-border-radius);
+}
 
 /*main admin*/
 .admin .row-grid{
@@ -347,3 +353,28 @@ li{
     padding: 6px 0;
 }
 
+/*order list*/
+.admin-content-main-content-order-list table{
+    width: 100%;
+    padding: 12px 0 ;
+    border-collapse:collapse ;
+}
+
+.admin-content-main-content-order-list table a{
+    display: inline-block;
+}
+
+.admin-content-main-content-order-list table,th,td{
+    text-align: center;
+    /* padding: 6px 0; */
+}
+
+.admin-content-main-content-order-list table th{
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+}
+
+.admin-content-main-content-order-list table td{
+    padding: 6px 0;
+}
