@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Admin-Coolmate</title>
+</head>
+<body>
+    <section class="admin">
+        <div class="row-grid">
+            <div class="admin-sidebar">
+                <div class="admin-sidebar-top">
+                    <img src="asset/img/logo.png" alt="">
+                </div>
+                <div class="admin-sidebar-content">
+                    <ul>
+                        <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Tổng quan</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Đơn hàng<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                            
+                        <li><a href=""><i class="ri-file-list-line"></i>Sản phẩm<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+                                </div>
+                            </ul>
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="admin-content-top">
+                    <div class="admin-content-top-left">
+                        <ul class="flex-box">
+                            <li> <i class="ri-search-line"></i></li>
+                            <li><i class="ri-drag-move-line"></i></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content-top-right">
+                        <ul class="flex-box">
+                            <li> <i class="ri-notification-4-line" number="3" ></i></li>
+                            <li><i class="ri-message-2-line" number="5"></i></li>
+                            <li class="flex-box">
+                                <img style="width:50px" src="asset/img/logo.png" alt="">
+                                <p>Thai<i class="ri-arrow-down-s-fill"></i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin-content-main">
+                    <div class="admin-content-main-title">
+                        <h1>Chỉnh sửa sản phẩm</h1>        
+                    </div>
+                    <div class="admin-content-main-content ">
+                        <div class="admin-content-main-content-product-add">
+                            <div class="admin-content-main-content-left">
+                                <div class="admin-content-main-content-two-input">
+                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
+                                    <input type="text" name="" id="" placeholder="Chất liệu">
+                                </div>
+                                <div class="admin-content-main-content-two-input">
+                                    <input type="text" name="" id="" placeholder="Giá bán">
+                                    <input type="text" name="" id="" placeholder="Giá giảm">
+                                </div>
+
+                                
+                                <textarea class="editor_content" name="" id="">Đặc điểm nổi bật</textarea>
+                                <br>
+                                <textarea class="editor_des" name="" id="">Mô tả sản phẩm</textarea>
+                                <br>
+                                <button class="main-btn">Cập nhật sản phẩm</button>
+
+                            </div>
+                            <div class="admin-content-main-content-right">
+                                <div class="admin-content-main-content-right-image">
+                                    <label for="file"> <i class="ri-file-pdf-line"></i>Ảnh đại diện </label>
+                                    <input id="file" type="file" name="" id="">
+                                    <div class="image-show">
+
+                                    </div>
+                                </div>
+                                <div class="admin-content-main-content-right-images">
+                                    <label for="files"> <i class="ri-file-pdf-line"></i>Ảnh sản phẩm</label>
+                                    <input id="files" type="file" name="" id="">
+                                    <div class="image-shows">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/ckeditor.js"></script>
+</body>
+</html>

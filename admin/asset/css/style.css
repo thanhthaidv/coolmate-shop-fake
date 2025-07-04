@@ -378,3 +378,28 @@ li{
 .admin-content-main-content-order-list table td{
     padding: 6px 0;
 }
+
+/*order detail*/
+
+
+.admin-content-main-content-order-detail table{
+    width: 100%;
+    padding: 12px 0 ;
+    border-collapse:collapse ;  
+}
+
+.admin-content-main-content-order-detail table,th,td{
+    text-align: center;
+}
+
+.admin-content-main-content-order-detail table th{
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+}
+
+.admin-content-main-content-order-detail table a{
+    display: inline-block;
+
+    
+}
