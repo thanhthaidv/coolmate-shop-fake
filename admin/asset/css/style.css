@@ -45,6 +45,21 @@ li{
     transition: var(--main-trasition);
 }
 
+.delete-class {
+    padding: 3px;
+    background-color: #ff1800;
+    color: white;
+    border-radius: var(--main-border-radius);
+}
+
+.edit-class{
+    padding: 3px;
+    background-color: #6b91e5   ;
+    color: white;
+    border-radius: var(--main-border-radius);
+}
+
+
 /*main admin*/
 .admin .row-grid{
     grid-template-columns: 20% 80%;
@@ -228,17 +243,24 @@ li{
     border-top-right-radius:5px ;
 }
 
+/*product add*/
+
 .admin-content-main-content{
+    background-color: white;
+}
+
+.admin-content-main-content-product-add{
     display: grid;
     grid-template-columns: 69% 30%;
     padding: 12px;
     column-gap: 20px;
 }
 
+
 .admin-content-main-content-left input{
     height:30px;
     border:none;
-    background-color: white;
+    background-color: var(--sub-bg-color);
     margin-bottom: 20px;
     /* outline: none; */
     border-radius: var(--main-border-radius);
@@ -305,3 +327,23 @@ li{
     max-height: 550px;
     overflow: scroll
 }
+
+
+/* product list*/
+
+.admin-content-main-content-product-list table{
+    width: 100%;
+    padding: 12px 0 ;
+    border-collapse:collapse ;  
+}
+
+.admin-content-main-content-product-list table,th,td{
+    text-align: center;
+}
+
+.admin-content-main-content-product-list table th{
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+}
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <title>Admin-Coolmate</title>
 </head>
@@ -63,43 +64,64 @@
                 </div>
                 <div class="admin-content-main">
                     <div class="admin-content-main-title">
-                        <h1>Thêm sản phẩm</h1>        
+                        <h1>Danh sách sản phẩm</h1>        
                     </div>
-                    <div class="admin-content-main-content ">
-                        <div class="admin-content-main-content-product-add">
-                            <div class="admin-content-main-content-left">
-                                <div class="admin-content-main-content-two-input">
-                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
-                                    <input type="text" name="" id="" placeholder="Chất liệu">
-                                </div>
-                                <div class="admin-content-main-content-two-input">
-                                    <input type="text" name="" id="" placeholder="Giá bán">
-                                    <input type="text" name="" id="" placeholder="Giá giảm">
-                                </div>
-
-                                
-                                <textarea class="editor_content" name="" id="">Đặc điểm nổi bật</textarea>
-                                <br>
-                                <textarea class="editor_des" name="" id="">Mô tả sản phẩm</textarea>
-                                <br>
-                                <button class="main-btn">Thêm sản phẩm</button>
-
-                            </div>
-                            <div class="admin-content-main-content-right">
-                                <div class="admin-content-main-content-right-image">
-                                    <label for="file"> <i class="ri-file-pdf-line"></i>Ảnh đại diện </label>
-                                    <input id="file" type="file" name="" id="">
-                                    <div class="image-show">
-
-                                    </div>
-                                </div>
-                                <div class="admin-content-main-content-right-images">
-                                    <label for="files"> <i class="ri-file-pdf-line"></i>Ảnh sản phẩm</label>
-                                    <input id="files" type="file" name="" id="">
-                                    <div class="image-shows">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="admin-content-main-content">
+                        <div class="admin-content-main-content-product-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th> Ảnh </th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Giá bán</th>
+                                        <th>Giá giảm</th>
+                                        <th>Ngày đăng</th>
+                                        <th>Tùy chỉnh</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img style="width: 70px;" src="asset/img/aothun1.1.jpg" alt=""></td>
+                                        <td>T-Shirt Cotton 220GSM</td>
+                                        <td>120,000</td>
+                                        <td>60,000</td>
+                                        <td>2025-07-04 10:22:5</td>
+                                        <td>
+                                            <a class="edit-class" href="">Sửa</a>
+                                            |
+                                            <a class="delete-class" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><img style="width: 70px;" src="asset/img/aothun1.1.jpg" alt=""></td>
+                                        <td>T-Shirt Cotton 220GSM</td>
+                                        <td>120,000</td>
+                                        <td>60,000</td>
+                                        <td>2025-07-04 10:22:5</td>
+                                        <td>
+                                            <a class="edit-class" href="">Sửa</a>
+                                            |
+                                            <a class="delete-class" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><img style="width: 70px;" src="asset/img/aothun1.1.jpg" alt=""></td>
+                                        <td>T-Shirt Cotton 220GSM</td>
+                                        <td>120,000</td>
+                                        <td>60,000</td>
+                                        <td>2025-07-04 10:22:5</td>
+                                        <td>
+                                            <a class="edit-class" href="">Sửa</a>
+                                            |
+                                            <a class="delete-class" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -107,6 +129,5 @@
         </div>
     </section>
     <script src="asset/js/script.js"></script>
-    <script src="asset/js/ckeditor.js"></script>
 </body>
 </html>
