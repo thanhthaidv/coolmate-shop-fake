@@ -1,21 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,500; 0,600; 0,700;0,800;1,600;1,700&display=swap');
 :root{
     --main-bg-color:#dfe2e8;
     --sub-bg-color:#f2f7fb;
     --top-height:70px;
-     --main-trasition:all 0.3s ease-in-out;
-
-
+    --main-trasition:all 0.3s ease-in-out;
+    --main-border-radius:5px;
+    --main-font-family:'Open Sans',sans-serif;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--main-font-family);
 }
 
 a{
@@ -35,6 +34,15 @@ li{
 .flex-box{
     display: flex;
     ;
+}
+
+.main-btn{
+    padding: 10px 12px;
+    background-color: black;
+    color: whitesmoke;
+    border:none;
+    cursor: pointer;
+    transition: var(--main-trasition);
 }
 
 /*main admin*/
@@ -108,7 +116,7 @@ li{
 }
 /*content*/
 .admin-content{
-    background-color: var(--sub-bg-color);
+    background-color: #f2f6fa;
 }
 
 
@@ -220,3 +228,80 @@ li{
     border-top-right-radius:5px ;
 }
 
+.admin-content-main-content{
+    display: grid;
+    grid-template-columns: 69% 30%;
+    padding: 12px;
+    column-gap: 20px;
+}
+
+.admin-content-main-content-left input{
+    height:30px;
+    border:none;
+    background-color: white;
+    margin-bottom: 20px;
+    /* outline: none; */
+    border-radius: var(--main-border-radius);
+    padding-left: 6px;
+}
+
+.admin-content-main-content-two-input {
+    display: flex;
+    justify-content: space-between
+}
+
+.admin-content-main-content-two-input input{
+    width: 40%;
+}
+
+.admin-content-main-content-left textarea{
+    height:150px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 6px;
+    border: none;
+}
+
+
+.admin-content-main-content-right-image input{
+    display: none;
+}
+
+.admin-content-main-content-right-images input{
+    display: none;
+}
+
+.admin-content-main-content-right label{
+    display: inline-block;
+    padding:6px 12px;
+    background-color: black;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.image-show , .image-shows{
+    min-height: 150px;
+}
+
+.ck.ck-editor__editable_inline {
+    min-height: 200px;
+    border-radius: var(--main-border-radius);
+    background-color: white;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    
+}
+
+.ck-editor {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.admin-content-main-content-left {
+    max-height: 550px;
+    overflow: scroll
+}
